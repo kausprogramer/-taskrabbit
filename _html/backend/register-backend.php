@@ -23,6 +23,7 @@
                 else
                 {
                     echo"<script>alert('Registeration Unsuccessful');</script>";
+                    header("location:login.php");
                 }
             }
         }
@@ -31,5 +32,5 @@
             echo"<script>alert('Fill All The Fields Of The Form');</script>";
         }
     }
-    2
+
 ?>
