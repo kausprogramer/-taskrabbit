@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Job Stock - Best Responsive Job Portal Template</title>
+    
+    <meta name="description" content="In this lab, I'm going to demonstrate how to create a fixed navigation, single page site with smooth scrolling, and highlighting the navigation link depending on which section is currently being viewed. This technique is great for single page sites that want to pack in lots of goodies on one page, but use a navigation with cool scrolling to section it off." />
+    
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src='js/jquery.scrollto.js'></script>
+    
+</head>
+
+
+
+<body>
+
+
+<div id="wrapper">
+
+
+<header>
+    <div class="container clearfix">
+        <div id="logo">
+            <a href="http://www.megrisoft.com/"><img src="img/logo.png" /></a>
+        </div>
+        <div id="title">
+            <h1>Job Stock Job Portal Template</h1>
+            <span><a href="http://www.themezhub.com/">Themez Hub</a></span>
+        </div>
+    </div>
+</header>
+
+
+
+<div id="main">
+    <div class="container clearfix">
+        
+        
+        <div id="sidebar">
+            <div id="nav-anchor"></div>
+            <nav>
+
+                <ul>
+                    <li><a href="#home" class="nav-active">Before Start</a></li>
+                    <li><a href="#about">How To Install ?</a></li>
+					<li><a href="#navigation">Navigation Option</a></li>
+					<li><a href="#javascripts">Javascripts</a></li>
+                    <li><a href="#services">Setting & Uses</a></li>
+					 <li><a href="#map">Map Settings</a></li>
+					<li><a href="#colors">Colors</a></li>
+					<li><a href="#autocompelete">Autocompelete</a></li>
+                    <li><a href="#blog">Credits</a></li>
+                    <li><a href="#contact">For Help</a></li>
+                </ul>
+            </nav>
+        </div><!-- /sidebar -->
+        
+        <div id="content">
+            
+            
+        
+            <section id="home">
+                <h1>Before Starting</h1>
+				<ul class="start">
+				<li>Created:<span> August 14 2017</span></li>
+				<li>Version:<span> 5.2</span></li>
+				<li>Last Update:<span> May 11 2019</span></li>
+				<li>By:<span> Themez Hub</span></li>
+				<li>Email:<span> themezhub@gmail.com</span></li>
+				</ul>
+				<p>
+					Thank you for purchasing the <strong>Job Stock Template.</strong> If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/themezhub77">here</a>. Thanks so much! 
+                </p>
+            </section>
+        
+        
+            <section id="about">
+                <h1>How To Install ?</h1>
+                <p>
+                    Setting up the HTML template is a very easy job! For install it move HTML_folder in your ftp account or open your cpannel and move it.
+                </p>
+				
+				<h1>HTML Structure</h1>
+				<p>Here is the general structure for easly customization </p>
+				<h2>Change Meta Info</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">	<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;Content-Type&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;text/html; charset=UTF-8&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;X-UA-Compatible&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;IE=edge&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;viewport&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;width=device-width, initial-scale=1.0&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;description&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;Best Responsive job portal template build on Latest Bootstrap.&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;keywords&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;job, nob board, job portal, job listing&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;robots&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;index,follow&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;title&gt;</span>Job Stock - Responsive Job Portal Bootstrap Template | ThemezHub<span style="color: #007700">&lt;/title&gt;</span>
+</pre></div>
+
+
+				<h2>Header Navigation Structure</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">&lt;!-- Start Navigation --&gt;</span>
+<span style="color: #007700">&lt;nav</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar navbar-default navbar-fixed navbar-transparent white bootsnav&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>            
+		<span style="color: #007700">&lt;button</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;button&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar-toggle&quot;</span> <span style="color: #0000CC">data-toggle=</span><span style="background-color: #fff0f0">&quot;collapse&quot;</span> <span style="color: #0000CC">data-target=</span><span style="background-color: #fff0f0">&quot;#navbar-menu&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-bars&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span>
+		<span style="color: #007700">&lt;/button&gt;</span>
+		<span style="color: #888888">&lt;!-- Start Header Navigation --&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar-header&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar-brand&quot;</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;index.html&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;img/logo.png&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;logo logo-display&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;img/logo-white.png&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;logo logo-scrolled&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;/a&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+
+		<span style="color: #888888">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;collapse navbar-collapse&quot;</span> <span style="color: #0000CC">id=</span><span style="background-color: #fff0f0">&quot;navbar-menu&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;nav navbar-nav navbar-left&quot;</span> <span style="color: #0000CC">data-in=</span><span style="background-color: #fff0f0">&quot;fadeInDown&quot;</span> <span style="color: #0000CC">data-out=</span><span style="background-color: #fff0f0">&quot;fadeOutUp&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;li</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;active&quot;</span><span style="color: #007700">&gt;&lt;input</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;Find Freelancer&quot;</span><span style="color: #007700">&gt;&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;blog.html&quot;</span><span style="color: #007700">&gt;</span>Blog<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+			<span style="color: #007700">&lt;/ul&gt;</span>
+			<span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;nav navbar-nav navbar-right&quot;</span> <span style="color: #0000CC">data-in=</span><span style="background-color: #fff0f0">&quot;fadeInDown&quot;</span> <span style="color: #0000CC">data-out=</span><span style="background-color: #fff0f0">&quot;fadeOutUp&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;login.html&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-pencil&quot;</span> <span style="color: #0000CC">aria-hidden=</span><span style="background-color: #fff0f0">&quot;true&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span>SignUp<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;pricing.html&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-sign-in&quot;</span> <span style="color: #0000CC">aria-hidden=</span><span style="background-color: #fff0f0">&quot;true&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span>Pricing<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;left-br&quot;</span><span style="color: #007700">&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;javascript:void(0)&quot;</span>  <span style="color: #0000CC">data-toggle=</span><span style="background-color: #fff0f0">&quot;modal&quot;</span> <span style="color: #0000CC">data-target=</span><span style="background-color: #fff0f0">&quot;#signup&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;signin&quot;</span><span style="color: #007700">&gt;</span>Sign In Now<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+			<span style="color: #007700">&lt;/ul&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span><span style="color: #888888">&lt;!-- /.navbar-collapse --&gt;</span>
+	<span style="color: #007700">&lt;/div&gt;</span>   
+<span style="color: #007700">&lt;/nav&gt;</span>
+<span style="color: #888888">&lt;!-- End Navigation --&gt;</span>
+<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;clearfix&quot;</span><span style="color: #007700">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+            
+				<h2>Footer Structure</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #888888">&lt;!-- Footer Section Start --&gt;</span>
+<span style="color: #007700">&lt;footer</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row lg-menu&quot;</span><span style="color: #007700">&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-4 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;img/footer-logo.png&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;img-responsive&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;&quot;</span> <span style="color: #007700">/&gt;</span> 
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-8 co-sm-8 pull-right&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;ul&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;index.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Home<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;blog.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Blog<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;pricing.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Pricing<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;faq.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>FAQ<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;contact.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Contact Us<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;/ul&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row no-padding&quot;</span><span style="color: #007700">&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-3 col-sm-12&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-widget&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;h3</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widgettitle widget-title&quot;</span><span style="color: #007700">&gt;</span>About Job Stock<span style="color: #007700">&lt;/h3&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;textwidget&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;p&gt;</span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.<span style="color: #007700">&lt;/p&gt;</span>
+				<span style="color: #007700">&lt;p&gt;</span>7860 North Park Place<span style="color: #007700">&lt;br&gt;</span>
+				San Francisco, CA 94120<span style="color: #007700">&lt;/p&gt;</span>
+				<span style="color: #007700">&lt;p&gt;&lt;strong&gt;</span>Email:<span style="color: #007700">&lt;/strong&gt;</span> Support@careerdesk<span style="color: #007700">&lt;/p&gt;</span>
+				<span style="color: #007700">&lt;p&gt;&lt;strong&gt;</span>Call:<span style="color: #007700">&lt;/strong&gt;</span> <span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;tel:+15555555555&quot;</span><span style="color: #007700">&gt;</span>555-555-1234<span style="color: #007700">&lt;/a&gt;&lt;/p&gt;</span>
+				<span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-social&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-facebook&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-google-plus&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-twitter&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-instagram&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-linkedin&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;/ul&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-3 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-widget&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;h3</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widgettitle widget-title&quot;</span><span style="color: #007700">&gt;</span>All Navigation<span style="color: #007700">&lt;/h3&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;textwidget&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;textwidget&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-navigation&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Front-end Design<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Android Developer<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>CMS Development<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>PHP Development<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>IOS Developer<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Iphone Developer<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;/ul&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-3 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-widget&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;h3</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widgettitle widget-title&quot;</span><span style="color: #007700">&gt;</span>All Categories<span style="color: #007700">&lt;/h3&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;textwidget&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;ul</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-navigation&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Front-end Design<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Android Developer<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>CMS Development<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>PHP Development<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>IOS Developer<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+						<span style="color: #007700">&lt;li&gt;&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;manage-company.html&quot;</span> <span style="color: #0000CC">title=</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #007700">&gt;</span>Iphone Developer<span style="color: #007700">&lt;/a&gt;&lt;/li&gt;</span>
+					<span style="color: #007700">&lt;/ul&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+				
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-3 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-widget&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;h3</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;widgettitle widget-title&quot;</span><span style="color: #007700">&gt;</span>Connect Us<span style="color: #007700">&lt;/h3&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;textwidget&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;form</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;footer-form&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;input</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;Your Name&quot;</span><span style="color: #007700">&gt;</span> 
+					<span style="color: #007700">&lt;input</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;Email&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;textarea</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;Message&quot;</span><span style="color: #007700">&gt;&lt;/textarea&gt;</span>
+					<span style="color: #007700">&lt;button</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;submit&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;btn btn-primary&quot;</span><span style="color: #007700">&gt;</span>Login<span style="color: #007700">&lt;/button&gt;</span>
+				<span style="color: #007700">&lt;/form&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row copyright&quot;</span><span style="color: #007700">&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;p&gt;</span>Copyright Job Stock © 2017. All Rights Reserved <span style="color: #007700">&lt;/p&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/footer&gt;</span>
+<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;clearfix&quot;</span><span style="color: #007700">&gt;&lt;/div&gt;</span>
+<span style="color: #888888">&lt;!-- Footer Section End --&gt;</span>
+</pre></div>
+
+
+
+				
+				<h2>Premium Job Tag Structure</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;tg-themetag tg-featuretag&quot;</span><span style="color: #007700">&gt;</span>Premium<span style="color: #007700">&lt;/span&gt;</span>
+</pre></div>
+
+				
+				<h2>Browse Job Structure</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;item-click&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;article&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-job-list&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-1 col-sm-2 small-padding&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-job-company-img&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;job-detail.html&quot;</span><span style="color: #007700">&gt;&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;assets/img/com-1.jpg&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;img-responsive&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;&quot;</span> <span style="color: #007700">/&gt;&lt;/a&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-6 col-sm-5&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-job-position&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;job-apply-detail.html&quot;</span><span style="color: #007700">&gt;&lt;h3&gt;</span>Digital Marketing Manager<span style="color: #007700">&lt;/h3&gt;&lt;/a&gt;</span>
+					<span style="color: #007700">&lt;p&gt;</span>
+						<span style="color: #007700">&lt;span&gt;</span>Autodesk<span style="color: #007700">&lt;/span&gt;&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-job-sallery&quot;</span><span style="color: #007700">&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-money&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span>$750 - 800<span style="color: #007700">&lt;/span&gt;</span>
+						<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;job-type cl-success bg-trans-success&quot;</span><span style="color: #007700">&gt;</span>Full Time<span style="color: #007700">&lt;/span&gt;</span>
+					<span style="color: #007700">&lt;/p&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-3 col-sm-3&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-job-location&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;p&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-map-marker&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span>QBL Park, C40<span style="color: #007700">&lt;/p&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-2 col-sm-2&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-job-link&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;job-apply-detail.html&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;btn btn-default&quot;</span><span style="color: #007700">&gt;</span>Apply Now<span style="color: #007700">&lt;/a&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;tg-themetag tg-featuretag&quot;</span><span style="color: #007700">&gt;</span>Premium<span style="color: #007700">&lt;/span&gt;</span>
+	<span style="color: #007700">&lt;/article&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre></div>
+
+
+				
+				<h2>Brouwse Company Structure</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;company-detail.html&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;item-click&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;article&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-company&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-2 col-sm-2&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-company-pic&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;img/com-1.jpg&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;img-responsive&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;&quot;</span> <span style="color: #007700">/&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-4 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-company-name&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;h4&gt;</span>AutoDesk<span style="color: #007700">&lt;/h4&gt;</span>
+					<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-company-tagline&quot;</span><span style="color: #007700">&gt;</span>Software Company<span style="color: #007700">&lt;/span&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-4 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-company-location&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;p&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-map-marker&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span> FALBROOK NSW 2330<span style="color: #007700">&lt;/p&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-2 col-sm-2&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-company-position&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;p&gt;</span>6 Opening<span style="color: #007700">&lt;/p&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;/article&gt;</span>
+<span style="color: #007700">&lt;/a&gt;</span>
+</pre></div>
+
+				
+				<h2>Browse Resume Structure</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;resume-detail.html&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;item-click&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;article&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-resume&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row no-mrg&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-2 col-sm-2&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-resume-pic&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;img/can-2.png&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;img-responsive&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;&quot;</span> <span style="color: #007700">/&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-4 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-resume-name&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;h4&gt;</span>Alexander Weir<span style="color: #007700">&lt;/h4&gt;</span>
+						<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-resume-designation&quot;</span><span style="color: #007700">&gt;</span>IOS Developer<span style="color: #007700">&lt;/span&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-4 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;brows-resume-location&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;p&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-map-marker&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span> Saint Paul, MN 55102<span style="color: #007700">&lt;/p&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-2 col-sm-2&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;browse-resume-rate&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;span&gt;&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-money&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span>$14/hour<span style="color: #007700">&lt;/span&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row extra-mrg row-skill&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;browse-resume-skills&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-9 col-sm-8&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;br-resume&quot;</span><span style="color: #007700">&gt;</span>
+							<span style="color: #007700">&lt;span&gt;</span>css<span style="color: #007700">&lt;/span&gt;&lt;span&gt;</span>html<span style="color: #007700">&lt;/span&gt;&lt;span&gt;</span>photoshop<span style="color: #007700">&lt;/span&gt;&lt;span&gt;</span>wordpress<span style="color: #007700">&lt;/span&gt;</span>
+							<span style="color: #007700">&lt;span&gt;</span>css<span style="color: #007700">&lt;/span&gt;</span>
+						<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-3 col-sm-4&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;browse-resume-exp&quot;</span><span style="color: #007700">&gt;</span>
+							<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;resume-exp&quot;</span><span style="color: #007700">&gt;</span>Exp. 2.5 Year<span style="color: #007700">&lt;/span&gt;</span>
+						<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;/article&gt;</span>
+<span style="color: #007700">&lt;/a&gt;</span>
+</pre></div>
+
+<h2>Freelancers Structure</h2>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;freelance-container&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;freelance-box&quot;</span><span style="color: #007700">&gt;</span>
+		<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;freelance-status bg-warning&quot;</span><span style="color: #007700">&gt;</span>At Work<span style="color: #007700">&lt;/span&gt;</span>
+		<span style="color: #007700">&lt;h4</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;flc-rate&quot;</span><span style="color: #007700">&gt;</span>$19/hr<span style="color: #007700">&lt;/h4&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;freelance-inner-box&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;freelance-box-thumb&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;assets/img/client-2.jpg&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;img-responsive img-circle&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;&quot;</span> <span style="color: #007700">/&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;freelance-box-detail&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;h4&gt;</span>Delores R. Williams<span style="color: #007700">&lt;/h4&gt;</span>
+				<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;desination&quot;</span><span style="color: #007700">&gt;</span>Software Developer<span style="color: #007700">&lt;/span&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;freelance-box-extra&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;ul&gt;</span>
+				<span style="color: #007700">&lt;li&gt;</span>Php<span style="color: #007700">&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li&gt;</span>Android<span style="color: #007700">&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li&gt;</span>Html<span style="color: #007700">&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;more-skill bg-primary&quot;</span><span style="color: #007700">&gt;</span>+3<span style="color: #007700">&lt;/li&gt;</span>
+			<span style="color: #007700">&lt;/ul&gt;</span>
+			<span style="color: #007700">&lt;p&gt;</span>At vero eos et accusamus et iusto odio dignissimos ducimus qui.<span style="color: #007700">&lt;/p&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;freelancer-detail.html&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;btn btn-freelance bt-1&quot;</span><span style="color: #007700">&gt;</span>View Detail<span style="color: #007700">&lt;/a&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre></div>
+
+
+<h2>Paid Candidate Structure</h2>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;paid-candidate-container&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;paid-candidate-box&quot;</span><span style="color: #007700">&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;dropdown&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;btn-group fl-right&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;button</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;button&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;btn-trans&quot;</span> <span style="color: #0000CC">data-toggle=</span><span style="background-color: #fff0f0">&quot;dropdown&quot;</span> <span style="color: #0000CC">aria-haspopup=</span><span style="background-color: #fff0f0">&quot;true&quot;</span> <span style="color: #0000CC">aria-expanded=</span><span style="background-color: #fff0f0">&quot;false&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;fa fa-gear&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span>
+				<span style="color: #007700">&lt;/button&gt;</span>
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;dropdown-menu pull-right animated flipInX&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Shortlist<span style="color: #007700">&lt;/a&gt;</span>
+					<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Send Message<span style="color: #007700">&lt;/a&gt;</span>
+					<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;#&quot;</span><span style="color: #007700">&gt;</span>Dislike<span style="color: #007700">&lt;/a&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;paid-candidate-inner--box&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;paid-candidate-box-thumb&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;img</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;assets/img/client-3.jpg&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;img-responsive img-circle&quot;</span> <span style="color: #0000CC">alt=</span><span style="background-color: #fff0f0">&quot;&quot;</span> <span style="color: #007700">/&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;paid-candidate-box-detail&quot;</span><span style="color: #007700">&gt;</span>
+				<span style="color: #007700">&lt;h4&gt;</span>Delores R. Williams<span style="color: #007700">&lt;/h4&gt;</span>
+				<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;desination&quot;</span><span style="color: #007700">&gt;</span>Software Developer<span style="color: #007700">&lt;/span&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;paid-candidate-box-extra&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;ul&gt;</span>
+				<span style="color: #007700">&lt;li&gt;</span>Php<span style="color: #007700">&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li&gt;</span>Android<span style="color: #007700">&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li&gt;</span>Html<span style="color: #007700">&lt;/li&gt;</span>
+				<span style="color: #007700">&lt;li</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;more-skill bg-primary&quot;</span><span style="color: #007700">&gt;</span>+3<span style="color: #007700">&lt;/li&gt;</span>
+			<span style="color: #007700">&lt;/ul&gt;</span>
+			<span style="color: #007700">&lt;p&gt;</span>At vero eos et accusamus et iusto odio dignissimos ducimus qui.<span style="color: #007700">&lt;/p&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;a</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;paid-candidater-detail.html&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;btn btn-paid-candidate bt-1&quot;</span><span style="color: #007700">&gt;</span>View Detail<span style="color: #007700">&lt;/a&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre></div>
+
+
+				
+
+				</section>
+			<section id="navigation">
+                <h1>Navigation Option</h1>
+				<p>Here 2 type navigation option you can change easly:</p>
+				<ul>
+				<li>Sticky Navigation</li>
+				<li>Simple Navigation</li>
+				</ul>
+				<p>By default sticky menu is active.</p>
+				<p><strong>Note:</strong> If you need simple navigation just replace nav class in header top like:</p>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;nav</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar navbar-default navbar-fixed navbar-transparent white bootsnav&quot;</span><span style="color: #007700">&gt;</span>
+</pre></div>
+<p style="text-align:center;margin-top:10px;"><strong>TO</strong></p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;nav</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;navbar navbar-default navbar-static navbar-transparent white bootsnav&quot;</span><span style="color: #007700">&gt;</span>
+</pre></div>
+
+			</section>
+			<section id="javascripts">
+			<h1>Java Script</h1>
+			<p>This theme imports three Javascript files.</p>
+			
+			<ul>
+			<li>jQuery</li>
+			<li>My custom scripts</li>
+			<li>Some plugin</li>
+			</ul>
+			
+			<h2>Company Brand Carousel Script</h2>
+			<p>You can customize easly like carousel navigation, auto-play etc.</p>
+			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> $(<span style="background-color: #fff0f0">&quot;#company-brands&quot;</span>).owlCarousel({
+	items<span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">5</span>,
+	itemsDesktop<span style="color: #333333">:</span>[<span style="color: #0000DD; font-weight: bold">1199</span>,<span style="color: #0000DD; font-weight: bold">5</span>],
+	itemsDesktopSmall<span style="color: #333333">:</span>[<span style="color: #0000DD; font-weight: bold">979</span>,<span style="color: #0000DD; font-weight: bold">4</span>],
+	itemsTablet<span style="color: #333333">:</span>[<span style="color: #0000DD; font-weight: bold">768</span>,<span style="color: #0000DD; font-weight: bold">3</span>],
+	itemsMobile<span style="color: #333333">:</span> [<span style="color: #0000DD; font-weight: bold">600</span>, <span style="color: #0000DD; font-weight: bold">2</span>],
+	pagination<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">false</span>,
+	navigation<span style="color: #333333">:</span><span style="color: #008800; font-weight: bold">false</span>,
+	navigationText<span style="color: #333333">:</span>[<span style="background-color: #fff0f0">&quot;&quot;</span>,<span style="background-color: #fff0f0">&quot;&quot;</span>],
+	autoPlay<span style="color: #333333">:</span><span style="color: #008800; font-weight: bold">true</span>
+});
+</pre></div>
+
+
+			<h2>Testimonials Script</h2>
+			<p>Customize your testimonials script .</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">$(<span style="background-color: #fff0f0">&quot;#client-testimonial-slider&quot;</span>).owlCarousel({
+	items<span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">3</span>,
+	itemsDesktop<span style="color: #333333">:</span>[<span style="color: #0000DD; font-weight: bold">1199</span>,<span style="color: #0000DD; font-weight: bold">3</span>],
+	itemsDesktopSmall<span style="color: #333333">:</span>[<span style="color: #0000DD; font-weight: bold">979</span>,<span style="color: #0000DD; font-weight: bold">2</span>],
+	itemsTablet<span style="color: #333333">:</span>[<span style="color: #0000DD; font-weight: bold">768</span>,<span style="color: #0000DD; font-weight: bold">1</span>],
+	pagination<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">false</span>,
+	navigation<span style="color: #333333">:</span><span style="color: #008800; font-weight: bold">false</span>,
+	navigationText<span style="color: #333333">:</span>[<span style="background-color: #fff0f0">&quot;&quot;</span>,<span style="background-color: #fff0f0">&quot;&quot;</span>],
+	autoPlay<span style="color: #333333">:</span><span style="color: #008800; font-weight: bold">true</span>
+});
+</pre></div>
+							<p>
+				<h2>Add Dynamic Field Script</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">$(<span style="background-color: #fff0f0">&#39;.multi-field-wrapper&#39;</span>).each(<span style="color: #008800; font-weight: bold">function</span>() {
+<span style="color: #008800; font-weight: bold">var</span> $wrapper <span style="color: #333333">=</span> $(<span style="background-color: #fff0f0">&#39;.multi-fields&#39;</span>, <span style="color: #008800; font-weight: bold">this</span>);
+$(<span style="background-color: #fff0f0">&quot;.add-field&quot;</span>, $(<span style="color: #008800; font-weight: bold">this</span>)).on(<span style="background-color: #fff0f0">&#39;click&#39;</span>, <span style="color: #008800; font-weight: bold">function</span>(e) {
+	$(<span style="background-color: #fff0f0">&#39;.multi-field:first-child&#39;</span>, $wrapper).clone(<span style="color: #008800; font-weight: bold">true</span>).appendTo($wrapper).find(<span style="background-color: #fff0f0">&#39;input&#39;</span>).val(<span style="background-color: #fff0f0">&#39;&#39;</span>).focus();
+});
+$(<span style="background-color: #fff0f0">&#39;.multi-field .remove-field&#39;</span>, $wrapper).click(<span style="color: #008800; font-weight: bold">function</span>() {
+	<span style="color: #008800; font-weight: bold">if</span> ($(<span style="background-color: #fff0f0">&#39;.multi-field&#39;</span>, $wrapper).length <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+		$(<span style="color: #008800; font-weight: bold">this</span>).parent(<span style="background-color: #fff0f0">&#39;.multi-field&#39;</span>).remove();
+	});
+});
+</pre></div>
+				</p>
+				
+				<p>
+				<h2>Bootstrap Wysihtml5 editor</h2>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">$(<span style="background-color: #fff0f0">&#39;.textarea&#39;</span>).wysihtml5();
+</pre></div>
+	
+				<p>			
+			
+			</section>
+            <section id="services">
+                <h1>Setting & Uses</h1>
+				Setup the basic infortation.
+				
+				<p>
+				<h3>Setting The Site Title</h3>
+				To change your site title and discription go to template folder and open index file in any editor and change 
+				your site title in header like:
+				
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;title&gt;</span>Job Stock - Responsive Job Portal Bootstrap Template | ThemezHub<span style="color: #007700">&lt;/title&gt;</span>
+</pre></div>
+
+				
+				<p>
+				<h3>Setting The Footer Copyright</h3>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row copyright&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;container&quot;</span><span style="color: #007700">&gt;</span>
+		<span style="color: #007700">&lt;p&gt;</span>Copyright Job Stock © 2017. All Rights Reserved <span style="color: #007700">&lt;/p&gt;</span>
+	<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre></div>
+
+				</p>
+				<p>
+				<h3>Setting for set up logo</h3>
+				To changing logo very easy job! Put your logo in img file with logo.png. And put same path in index file like:
+				<pre><code><span class="green">/*img src="img/logo.png" class="img-responsive"*/</span></code></pre>
+				</p>
+				<p>
+				<h3>Add Dynamic Field</h3>
+				<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row bottom-mrg extra-mrg&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;form&gt;</span>
+		<span style="color: #007700">&lt;h2</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;detail-title&quot;</span><span style="color: #007700">&gt;</span>Resume Content<span style="color: #007700">&lt;/h2&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-12 col-sm-12&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;textarea</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control textarea&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;About Company&quot;</span><span style="color: #007700">&gt;&lt;/textarea&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>	
+		
+	<span style="color: #007700">&lt;/form&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row bottom-mrg extra-mrg&quot;</span><span style="color: #007700">&gt;</span>
+	<span style="color: #007700">&lt;form&gt;</span>
+		<span style="color: #007700">&lt;h2</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;detail-title&quot;</span><span style="color: #007700">&gt;</span>Add Education<span style="color: #007700">&lt;/h2&gt;</span>
+		<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;multi-field-wrapper&quot;</span><span style="color: #007700">&gt;</span>
+			<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;multi-fields&quot;</span><span style="color: #007700">&gt;</span>	
+				<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;multi-field&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-12 col-sm-12&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;input</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;School Name, e.g. Master Of Technology&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-12 col-sm-12&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;input</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;Qualification, e.g. Master Of Arts&quot;</span><span style="color: #007700">&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-6 col-sm-6&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;input-group&quot;</span><span style="color: #007700">&gt;</span>
+							<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;input-group-addon&quot;</span><span style="color: #007700">&gt;</span>Date From<span style="color: #007700">&lt;/span&gt;</span>
+							<span style="color: #007700">&lt;input</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;10 June 2010&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-6 col-sm-6&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;input-group&quot;</span><span style="color: #007700">&gt;</span>
+							<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;input-group-addon&quot;</span><span style="color: #007700">&gt;</span>Date To<span style="color: #007700">&lt;/span&gt;</span>
+							<span style="color: #007700">&lt;input</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;text&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;10 August 2013&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-md-12 col-sm-12&quot;</span><span style="color: #007700">&gt;</span>
+						<span style="color: #007700">&lt;textarea</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;form-control textarea&quot;</span> <span style="color: #0000CC">placeholder=</span><span style="background-color: #fff0f0">&quot;Notes&quot;</span><span style="color: #007700">&gt;&lt;/textarea&gt;</span>
+					<span style="color: #007700">&lt;/div&gt;</span>
+					<span style="color: #007700">&lt;button</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;button&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;btn remove-field&quot;</span><span style="color: #007700">&gt;</span>Remove<span style="color: #007700">&lt;/button&gt;</span>
+				<span style="color: #007700">&lt;/div&gt;</span>
+			<span style="color: #007700">&lt;/div&gt;</span>									
+			<span style="color: #007700">&lt;button</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;button&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;add-field&quot;</span><span style="color: #007700">&gt;</span>Add field<span style="color: #007700">&lt;/button&gt;</span>
+		<span style="color: #007700">&lt;/div&gt;</span>
+	<span style="color: #007700">&lt;/form&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+</pre></div>
+
+				</p>
+				
+				<p>Note: For the change headeing color and paragraph color you need to go same file <strong>(style.css).</strong></p>
+            </section>
+			
+			<section id="map">
+			 <h1>Map Settings</h1>
+			 For Map Settings just add this js code in your file (html or php file) and just change  <strong>latitude</strong> &  <strong>longitude</strong> in both place center: & latLng in this code.
+			 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333333">&lt;</span>script type<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;text/javascript&quot;</span><span style="color: #333333">&gt;</span>
+				$(<span style="background-color: #fff0f0">&#39;#map_full_width_one&#39;</span>).gmap3({
+					map<span style="color: #333333">:</span> {
+						options<span style="color: #333333">:</span> {
+							zoom<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">5</span>,
+							center<span style="color: #333333">:</span> [<span style="color: #6600EE; font-weight: bold">41.785091</span>, <span style="color: #333333">-</span><span style="color: #6600EE; font-weight: bold">73.968285</span>],
+							mapTypeControl<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>,
+							mapTypeControlOptions<span style="color: #333333">:</span> {
+								style<span style="color: #333333">:</span> google.maps.MapTypeControlStyle.DROPDOWN_MENU
+							},
+							mapTypeId<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;style1&quot;</span>,
+							mapTypeControlOptions<span style="color: #333333">:</span> {
+								mapTypeIds<span style="color: #333333">:</span> [google.maps.MapTypeId.ROADMAP, <span style="background-color: #fff0f0">&quot;style1&quot;</span>]
+							},
+							navigationControl<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>,
+							scrollwheel<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">false</span>,
+							streetViewControl<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>
+						}
+					},
+					marker<span style="color: #333333">:</span> {
+						latLng<span style="color: #333333">:</span> [<span style="color: #6600EE; font-weight: bold">40.785091</span>, <span style="color: #333333">-</span><span style="color: #6600EE; font-weight: bold">73.968285</span>],
+						options<span style="color: #333333">:</span> {animation<span style="color: #333333">:</span>google.maps.Animation.BOUNCE, icon<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&#39;assets/img/marker.png&#39;</span> }
+					},
+					styledmaptype<span style="color: #333333">:</span> {
+						id<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;style1&quot;</span>,
+						options<span style="color: #333333">:</span> {
+							name<span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Style 1&quot;</span>
+						},
+
+					}
+				});
+
+			<span style="color: #333333">&lt;</span><span style="color: #FF0000; background-color: #FFAAAA">/script&gt;</span>
+</pre></div>
+<br>
+for find latitude and longitude go here and input you address.
+<a href="https://www.latlong.net/" title="latlong">latlong</a>
+<br>
+			 </section>
+			 <br><br>
+			 
+			 <section id="colors">
+			 <h1>Colors Option</h1>
+			 Now you can change more than 5 color option easly. We have add +5 color option 
+			 <ul class="colors">
+			 <li>blue-style.css</li>
+			 <li>dark-red-style.css</li>
+			 <li>green-style.css</li>
+			 <li>orange-style.css</li>
+			 <li>pink-style.css</li>
+			 <li>purple-style.css</li>
+			 <li>red-style.css</li>
+			 <li>sea-blue-style .css</li>
+			 </ul>
+			 
+			 if you want change color so please see how to add css:
+			 after responsive.css  <br>
+			 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;link</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;assets/css/responsiveness.css&quot;</span> <span style="color: #0000CC">rel=</span><span style="background-color: #fff0f0">&quot;stylesheet&quot;</span><span style="color: #007700">&gt;</span>
+</pre></div>
+ <br>
+add this css like this:
+ <br>	
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;link</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;assets/css/colors/red-style.css&quot;</span> <span style="color: #0000CC">rel=</span><span style="background-color: #fff0f0">&quot;stylesheet&quot;</span><span style="color: #007700">&gt;</span>
+</pre></div>
+ <br>
+you can replace red-style.css to other color css like: blue-style.css, orange-style.css, purple-style.css
+
+<p><strong>Note:</strong> In download package not include html files in all color. You have to change css file.</p>
+			 </section>
+        <br>
+		
+					 <section id="autocompelete">
+			 <h1>Autocompelete</h1>
+			 Now you can change autocompelete location, joblist and companies easly
+			 Go to assets/js/resources/companies.jason, joblist.jason,.. and change like you want. Don't forget to set id in input field and mention in custom.js
+			 
+			 For more and advance option go here <a href="http://easyautocomplete.com/guide">Easyautocomplete</a><br>
+ <br>	
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;link</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;assets/css/colors/red-style.css&quot;</span> <span style="color: #0000CC">rel=</span><span style="background-color: #fff0f0">&quot;stylesheet&quot;</span><span style="color: #007700">&gt;</span>
+</pre></div>
+ <br>
+you can replace red-style.css to other color css like: blue-style.css, orange-style.css, purple-style.css
+
+<p><strong>Note:</strong> In download package not include html files in all color. You have to change css file.</p>
+			 </section>
+        
+            <section id="blog">
+                <h1>Credits</h1>
+                <p>
+					<ul>
+					<li>Images: <a href="https://www.pexels.com/" target="_blank">Pexels/</a> And <a href="https://pixabay.com/" target="_blank">Pixabay</a></li>
+					<li>Carousel: <a href="http://owlgraphic.com/owlcarousel/" target="_blank">Owl Carousel</a> & <a href="https://themeforest.net" target="_blank">Themeforest</a></li>
+					<li>Grid Layout: <a href="https://getbootstrap.com/" target="_blank">Bootstrap 3.3.7</a></li>
+					<li>Bootsnav: <a href="http://bootsnav.danurstrap.com/" target="_blank">Bootsnav</a></li>
+					<li>Icon: <a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a>, <a href="https://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons" target="_blank">Line Icon</a></li></li>
+					<li>Fonts: <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+					<li>Default Content: <a href="http://www.lipsum.com/" target="_blank">Lipsum</a></li>
+					<li>Animation Css: <a href="http://daneden.me/animate" target="_blank">Animation</a></li>
+					<li>wysihtml Editor: <a href=" https://github.com/xing/wysihtml5" target="_blank">wysihtml</a></li>
+					<li>Date Dropper: <a href="http://felicegattuso.com/projects/datedropper/" target="_blank">Date Dropper</a></li>
+					<li>Autocompelete: <a href="http://easyautocomplete.com/guide" target="_blank">Autocomplete</a></li>
+					</ul>
+                </p>
+            </section>
+			
+			<p><strong>Note: </strong>Images not Included in download file. but screens and iphone include which made by Themez Hub</p>
+        
+            <section id="contact">
+                <p>
+				Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.
+                </p>
+            </section>
+			
+			<h2>Thank you, the customer, for purchasing Job Stock Job Poratl Template</h2>
+			<span>Kind regards,</span></br>
+			<span>Themez Hub Team</span>
+        
+        </div><!-- /#content -->
+        
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+       <span>© 2017 | All rights reserved.<a href="http://wwww.themezhub.com/">Themez Hub</a></span>
+    </div>
+</footer>
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+    
+
+        
+    $(document).ready(function(){
+        
+        /** 
+         * This part does the "fixed navigation after scroll" functionality
+         * We use the jQuery function scroll() to recalculate our variables as the 
+         * page is scrolled/
+         */
+        $(window).scroll(function(){
+            var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
+            var div_top = $('#nav-anchor').offset().top;
+                if (window_top > div_top) {
+                    $('nav').addClass('stick');
+                } else {
+                    $('nav').removeClass('stick');
+                }
+        });
+        
+        
+        /**
+         * This part causes smooth scrolling using scrollto.js
+         * We target all a tags inside the nav, and apply the scrollto.js to it.
+         */
+        $("nav a").click(function(evn){
+            evn.preventDefault();
+            $('html,body').scrollTo(this.hash, this.hash); 
+        });
+        
+        
+        
+        /**
+         * This part handles the highlighting functionality.
+         * We use the scroll functionality again, some array creation and 
+         * manipulation, class adding and class removing, and conditional testing
+         */
+        var aChildren = $("nav li").children(); // find the a children of the list items
+        var aArray = []; // create the empty aArray
+        for (var i=0; i < aChildren.length; i++) {    
+            var aChild = aChildren[i];
+            var ahref = $(aChild).attr('href');
+            aArray.push(ahref);
+        } // this for loop fills the aArray with attribute href values
+        
+        $(window).scroll(function(){
+            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+            var windowHeight = $(window).height(); // get the height of the window
+            var docHeight = $(document).height();
+            
+            for (var i=0; i < aArray.length; i++) {
+                var theID = aArray[i];
+                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+                var divHeight = $(theID).height(); // get the height of the div in question
+                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                    $("a[href='" + theID + "']").addClass("nav-active");
+                } else {
+                    $("a[href='" + theID + "']").removeClass("nav-active");
+                }
+            }
+            
+            if(windowPos + windowHeight == docHeight) {
+                if (!$("nav li:last-child a").hasClass("nav-active")) {
+                    var navActiveCurrent = $(".nav-active").attr("href");
+                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+                    $("nav li:last-child a").addClass("nav-active");
+                }
+            }
+        });
+    });
+
+</script>
+
+
+
+
+</body>
+</html>
