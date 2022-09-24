@@ -18,13 +18,18 @@
                 if($result)
                 {
                     echo"<script>alert('Registered successfully');</script>";
+                    header("location:../login.php");
                     // header("Location: index.php");
                 }
                 else
                 {
                     echo"<script>alert('Registeration Unsuccessful');</script>";
-                    header("location:login.php");
+                    header("location:../login.php");
                 }
+            }
+            else{
+                echo "<script>alert('Email already registered!')</script>";   
+                header("location:../register.php");
             }
         }
         else

@@ -35,7 +35,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="navbar-menu">
 						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li><a href="register.html"><i class="fa fa-sign-in"></i>Sign Up</a></li>
+							<li><a href="register.php"><i class="fa fa-sign-in"></i>Sign Up</a></li>
 							<li class="left-br"><a href="login.php" class="signin">Sign In Now</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
@@ -77,7 +77,7 @@
 									</li>
 									
 									<li><a href="job-with-map.html">Job With Map</a></li>
-									<li><a href="register.html">SignUp Page</a></li>
+									<li><a href="register.php">SignUp Page</a></li>
 									<li><a href="dashboard/index.php">Dashboard</a></li>									
 								</ul>
 							</li>
@@ -873,7 +873,7 @@
 										<li><a href="applications.html">Applications</a></li>
 										<li><a href="packages.html">Packages</a></li>
 										<li><a href="candidate-resume.html">resume.html</a></li>
-										<li><a href="register.html">SignUp Page</a></li>
+										<li><a href="register.php">SignUp Page</a></li>
 									</ul>
 								</div>
 							</div>
@@ -999,7 +999,7 @@
 								</div>
 								
 								<div class="register-account text-center">
-									Don't have an account? <a class="theme-cl" href="register.html">Register</a>
+									Don't have an account? <a class="theme-cl" href="register.php">Register</a>
 								</div>
 								
 							</div>

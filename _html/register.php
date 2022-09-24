@@ -212,12 +212,11 @@ error_reporting(0);
 								<div class="register-account text-center">
 									By hitting the <span class="theme-cl">"Register"</span> button, you agree to the <a class="theme-cl" href="#">Terms conditions</a> and <a class="theme-cl" href="#">Privacy Policy</a>
 								</div>
-                                <div class="Alert" style="display:none">
-                                    <?php 
-                                    if($_GET["email_check"]){
-                                        echo "Email already registered!";
-                                    }                                   
-                                    ?>
+                                <!-- <div class="Alert" <?php if($_GET["email_check"])echo"style='display:none'"?>>
+                                    
+                                       Email already registered!
+                                                                       
+                                     -->
                                 </div>
 								<div class="form-groups">
 									<button type="submit" class="btn btn-primary theme-bg full-width" name="register">Register</button>

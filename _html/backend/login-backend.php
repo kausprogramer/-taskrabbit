@@ -23,7 +23,7 @@ if(isset($_POST["login"]))
                 {
                     if(!strcmp($password,$row['password']))
                     {
-                        header("Location: ../dahsboard.php");
+                        header("Location:../dashboard.php");
                         die;
                     }
                     else
