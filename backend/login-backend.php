@@ -3,28 +3,28 @@ include_once("../config.php");
 session_start();
 if(isset($_POST["login"]))
 {
-    if((isset($_POST["full_name"])) && (isset($_POST["email"])) && (isset($_POST["password"])))
+    if((isset($_POST["email"])) && (isset($_POST["password"])))
         {
             $key='mykey';
-            $full_name=$_POST["full_name"];
             $email=$_POST["email"];
             $password=hash_hmac('sha256',$_POST["password"],$key);   
-            $email_check=mysqli_num_rows(mysqli_query($conn,"SELECT `email` FROM `login` WHERE email='$email'"));
+            $email_check=mysqli_num_rows(mysqli_query($conn,"SELECT `email` FROM `users` WHERE email='$email'"));
             if($email_check==0)
             {
-                echo"<script>alert('Email Not Registered');</script>";
+                // echo"<script>alert('Email Not Registered');</script>";
+                header("Location: ../login.php?email_check=1");
             }
             else
             {
-                $sql="SELECT * FROM `login` WHERE email='$email'";
+                $sql="SELECT * FROM `users` WHERE email='$email'";
                 $result = mysqli_query($conn, $sql);
                 $row=mysqli_fetch_assoc($result);
-                if($full_name==$row['full_name'])
+                if($email==$row['email'])
                 {
                     if(!strcmp($password,$row['password']))
                     {
-                        header("Location:../dashboard.php");
-                        die;
+                        $_SESSION['username']=$row['email'];
+                        header("Location:../index.php");
                     }
                     else
                     {
@@ -38,7 +38,7 @@ if(isset($_POST["login"]))
                 }
                 else
                 {
-                    echo"<script>alert('incorrect username');</script>";
+                    echo"<script>alert('incorrect email');</script>";
                 }
             }
         }
