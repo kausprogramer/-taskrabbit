@@ -6,7 +6,7 @@
         </button>
         <!-- Start Header Navigation -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <img src="assets/img/logo.png" class="logo logo-scrolled" alt="">
             </a>
         </div>
