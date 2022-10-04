@@ -77,18 +77,25 @@
 					</div>
 					<br>
 					<!-- Freelancers Start -->
+					<?php
+					include_once("../config.php");
+					$query="SELECT * FROM jobs  WHERE 1";
+					$result=mysqli_query($conn,$query);
+					while($row=mysqli_fetch_assoc($result))
+					{
+						?>
 					<div class="row">
 						
 						<!-- Single Freelancer & Premium job -->
 						<div class="col-md-4 col-sm-6">
 							<div class="popular-jobs-container">
 								<div class="popular-jobs-box">
-									<span class="popular-jobs-status bg-success">hourly</span>
-									<h4 class="flc-rate">$17/hr</h4>
+									<span class="popular-jobs-status bg-success"><?php echo $row["salary_postfix"]?></span>
+									<h4 class="flc-rate"><?php echo $row["salary_to"]?></h4>
 									<div class="popular-jobs-box">
 										<div class="popular-jobs-box-detail">
-											<h4>House Shifting</h4>
-											<span class="desination">Peter</span>
+											<h4><?php echo $row["jon_title"]?></h4>
+											<span class="desination"><?php echo $_SESSION["full_name"] ?> </span>
 										</div>
 									</div>
 									<div class="popular-jobs-box-extra">
@@ -104,6 +111,9 @@
 								</div>
 							</div>
 						</div>
+						<?php
+					}
+					?>
 						<!-- More -->
 						<div class="col-md-12 col-sm-12">
 							<!-- <div class="text-center">
