@@ -78,7 +78,7 @@
 					<br>
 					<!-- Freelancers Start -->
 					<?php
-					include_once("../config.php");
+					include_once("config.php");
 					$query="SELECT * FROM jobs  WHERE 1";
 					$result=mysqli_query($conn,$query);
 					while($row=mysqli_fetch_assoc($result))
