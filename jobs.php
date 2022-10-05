@@ -2,7 +2,7 @@
 session_start(); 
 include_once "config.php";
 error_reporting(0);
-$sql = "SELECT COUNT(*) FROM jobs WHERE id = ".$_SESSION['id'];
+$sql = "SELECT COUNT(*) FROM jobs";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 $job_posted = $row['COUNT(*)'];

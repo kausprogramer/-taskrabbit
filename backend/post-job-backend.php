@@ -22,7 +22,7 @@ $skill_requirments = $_POST['skills'];
 
 // echo $job_title. "<br>". $salary. "<br>". $industry. "<br>". $category. "<br>". $job_type. "<br>". $address. "<br>". $city. "<br>". $state. "<br>". $country. "<br>". $zip. "<br>". $telephone. "<br>". $email. "<br>". $job_responsibilities. "<br>". $skill_requirments;
 
-$sql = "INSERT INTO jobs (job_title, salary, industry, category, job_type, address, city, state, country, zip_code, telephone, email, job_responsibilities, skill_requirments) VALUES ('$job_title', '$salary', '$industry', '$category', '$job_type', '$address', '$city', '$state', '$country', '$zip', '$telephone', '$email', '$job_responsibilities', '$skill_requirments')";
+$sql = "INSERT INTO jobs (job_title, salary, industry, category, job_type, address, city, state, country, zip_code, telephone, email, job_responsibilities, skill_requirments,by_user) VALUES ('$job_title', '$salary', '$industry', '$category', '$job_type', '$address', '$city', '$state', '$country', '$zip', '$telephone', '$email', '$job_responsibilities', '$skill_requirments','$_SESSION[id]')";
 // echo "<br>".$sql;
 $result = mysqli_query($conn, $sql);
 // echo "<br>".$result;

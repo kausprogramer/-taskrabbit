@@ -6,7 +6,8 @@ if(!isset($_SESSION['username']))
 }
 error_reporting(0);
 include_once "config.php";
-$sql = "SELECT COUNT(*) FROM jobs WHERE id = ".$_SESSION['id'];
+$sql = "SELECT COUNT(*) FROM jobs WHERE by_user = '".$_SESSION['id']."'";
+echo $sql;
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 $job_posted = $row['COUNT(*)'];
