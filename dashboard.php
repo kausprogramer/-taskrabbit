@@ -5,6 +5,11 @@ if(!isset($_SESSION['username']))
 	header("Location:../index.php");
 }
 error_reporting(0);
+include_once "config.php";
+$sql = "SELECT COUNT(*) FROM jobs WHERE id = ".$_SESSION['id'];
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+$job_posted = $row['COUNT(*)'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -42,37 +47,37 @@ error_reporting(0);
 								
 								<div class="dashboard-avatar">
 								
-									<div class="dashboard-avatar-thumb">
+									<!-- <div class="dashboard-avatar-thumb">
 										<img src="assets/img/can-2.png" class="img-avater" alt="" />
-									</div>
+									</div> -->
 									
 									<div class="dashboard-avatar-text">
-										<h4>Shaurya Preet</h4>
-										<span>Zivara Technoloty</span>
+										<h4><?php echo $_SESSION["full_name"] ?></h4>
+										<span><?php echo $_SESSION["username"] ?></span>
 									</div>
 									
 								</div>
 								
 								<div class="dashboard-menu">
 									<ul>
-										<li class="active"><a href="dashboard.html"><i class="ti-dashboard"></i>Dashboard</a></li>
-										<li><a href="post-new-job.html"><i class="ti-ruler-pencil"></i>Post New Page</a></li>
-										<li><a href="all-jobs.html"><i class="ti-briefcase"></i>All Jobs</a></li>
+										<li class="active"><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
+										<li><a href="post-job.php"><i class="ti-ruler-pencil"></i>Post Job</a></li>
+										<!-- <li><a href="all-jobs.html"><i class="ti-briefcase"></i>All Jobs</a></li>
 										<li><a href="applications.html"><i class="ti-user"></i>Applications</a></li>
 										<li><a href="packages.html"><i class="ti-wallet"></i>Packages</a></li>
 										<li><a href="choose-package.html"><i class="ti-cup"></i>Choose Packages</a></li>
 										<li><a href="viewed-resume.html"><i class="ti-flag-alt-2"></i>Viewed Resume</a></li>
 										<li><a href="myprofile.html"><i class="ti-id-badge"></i>Edit Profile</a></li>
-										<li><a href="login.html"><i class="ti-power-off"></i>Logout</a></li>
+										<li><a href="login.html"><i class="ti-power-off"></i>Logout</a></li> -->
 									</ul>
-									<h4>For Candidate</h4>
+									<!-- <h4>For Candidate</h4>
 									<ul>
 										<li><a href="candidate-dashboard.html"><i class="ti-dashboard"></i>Candidate Dashboard</a></li>
 										<li><a href="candidate-resume.html"><i class="ti-wallet"></i>My Resume</a></li>
 										<li><a href="applied-jobs.html"><i class="ti-hand-point-right"></i>Applied Jobs</a></li>
 										<li><a href="saved-jobs.html"><i class="ti-heart"></i>Saved Jobs</a></li>
 										<li><a href="alert-jobs.html"><i class="ti-bell"></i>Alert Jobs</a></li>
-									</ul>
+									</ul> -->
 								</div>
 							</div>
 						</div>
@@ -92,35 +97,35 @@ error_reporting(0);
 										<div class="row">
 											<div class="col-lg-3 col-md-6 col-sm-12">
 												<div class="dashboard-stat widget-1">
-													<div class="dashboard-stat-content"><h4>210</h4> <span>Job Posted</span></div>
+													<div class="dashboard-stat-content"><h4><?php echo $job_posted ?></h4> <span>Job Posted</span></div>
 													<div class="dashboard-stat-icon"><i class="ti-location-pin"></i></div>
 												</div>	
 											</div>
 											
-											<div class="col-lg-3 col-md-6 col-sm-12">
+											<!-- <div class="col-lg-3 col-md-6 col-sm-12">
 												<div class="dashboard-stat widget-2">
 													<div class="dashboard-stat-content"><h4>80</h4> <span>Pending Jobs</span></div>
 													<div class="dashboard-stat-icon"><i class="ti-layers"></i></div>
 												</div>	
-											</div>
+											</div> -->
 											
 											<div class="col-lg-3 col-md-6 col-sm-12">
 												<div class="dashboard-stat widget-3">
-													<div class="dashboard-stat-content"><h4>712</h4> <span>Total Views</span></div>
+													<div class="dashboard-stat-content"><h4>0</h4> <span>Total Views</span></div>
 													<div class="dashboard-stat-icon"><i class="ti-pie-chart"></i></div>
 												</div>	
 											</div>
 											
-											<div class="col-lg-3 col-md-6 col-sm-12">
+											<!-- <div class="col-lg-3 col-md-6 col-sm-12">
 												<div class="dashboard-stat widget-4">
 													<div class="dashboard-stat-content"><h4>107</h4> <span>Expire Jobs</span></div>
 													<div class="dashboard-stat-icon"><i class="ti-bookmark"></i></div>
 												</div>	
-											</div>
+											</div> -->
 										</div>
 										
 										<!-- Notifications -->
-										<div class="row">
+										<!-- <div class="row">
 											<div class="col-lg-6 col-md-12">
 												<div class="dashboard-gravity-list with-icons">
 													<h4>Recent Activities</h4>
@@ -243,7 +248,7 @@ error_reporting(0);
 													</ul>
 												</div>
 											</div>	
-										</div>
+										</div> -->
 										
 									</div>
 									
@@ -257,7 +262,7 @@ error_reporting(0);
 			<!-- General Detail End -->
 			
 			<!-- ============================ Call To Action ================================== -->
-			<section class="theme-bg call-to-act-wrap">
+			<!-- <section class="theme-bg call-to-act-wrap">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -273,7 +278,7 @@ error_reporting(0);
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- ============================ Call To Action End ================================== -->
 			
 			<!-- ============================ Before Footer ================================== -->

@@ -1,3 +1,6 @@
+<?php session_start();
+error_reporting(0);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,142 +22,7 @@
 		<div class="wrapper">  
 			
 			<!-- Start Navigation -->
-			<nav class="navbar navbar-default navbar-fixed navbar-light white bootsnav">
-
-				<div class="container">            
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-						<i class="fa fa-bars"></i>
-					</button>
-					<!-- Start Header Navigation -->
-					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">
-							<img src="assets/img/logo.png" class="logo logo-scrolled" alt="">
-						</a>
-					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="navbar-menu">
-						<ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
-							<li class="dropdown">
-								<a href="login.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-								<ul class="dropdown-menu animated fadeOutUp">
-									<li><a href="index.html">Home Page 1</a></li>
-									<li><a href="index-2.html">Home Page 2</a></li>
-									<li><a href="index-3.html">Home Page 3</a></li>
-									<li><a href="index-4.html">Home Page 4</a></li>
-									<li><a href="index-5.html">Home Page 5</a></li><li><a href="index-6.html">Home Page 6</a></li>
-									<li><a href="freelancing.html">Freelancing</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="login.html" class="dropdown-toggle" data-toggle="dropdown">Jobs</a>
-								<ul class="dropdown-menu animated fadeOutUp">
-									
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Job Listing</a>
-										<ul class="dropdown-menu animated fadeOutUp">
-											<li><a href="browse-jobs.html">Browse Jobs</a></li>
-											<li><a href="browse-jobs-list.html">Browse Jobs With Sidebar</a></li>
-											<li><a href="browse-jobs-grid.html">Job In Grid</a></li>
-											<li><a href="search-new.html">Search Job</a></li>
-											<li><a href="popular-jobs.html">Popular Jobs</a></li>
-										</ul>
-									</li>
-									
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Job Detail</a>
-										<ul class="dropdown-menu animated fadeOutUp">
-											<li><a href="job-detail-1.html">Job Detail 1</a></li>
-											<li><a href="job-detail-2.html">Job Detail 2</a></li>
-											<li><a href="job-detail-3.html">Job Detail 3</a></li>
-											<li><a href="advance-search.html">Advance Search Job</a></li>
-											<li><a href="advance-search-2.html">Advance Search Job 2</a></li>
-										</ul>
-									</li>
-									
-									<li><a href="job-with-map.html">Job With Map</a></li>
-									<li><a href="register.html">SignUp Page</a></li>
-									<li><a href="dashboard/index.html">Dashboard</a></li>									
-								</ul>
-							</li>
-							
-							<li class="dropdown megamenu-fw"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Brows</a>
-								<ul class="dropdown-menu megamenu-content" role="menu">
-									<li>
-										<div class="row">
-											<div class="col-menu col-md-3">
-												<h6 class="title">Main Pages</h6>
-												<div class="content">
-													<ul class="menu-col">
-														<li><a href="login.html">New Login</a></li>
-														<li><a href="signin-signup.html">Sign In / Sign Up</a></li>
-														<li><a href="search-job.html">Search Job</a></li>
-														<li><a href="accordion.html">Accordion</a></li>
-														<li><a href="tab.html">Tab Style</a></li>
-														<li><a href="blog.html">Blog</a></li>
-														<li><a href="pricing.html">Pricing</a></li>
-													</ul>
-												</div>
-											</div><!-- end col-3 -->
-											<div class="col-menu col-md-3">
-												<h6 class="title">For Candidate</h6>
-												<div class="content">
-													<ul class="menu-col">
-														
-														
-														<li><a href="browse-candidate-list.html">Browse Candidates</a></li>
-														<li><a href="manage-candidate.html">Browse Candidate</a></li>
-														<li><a href="top-candidate.html">Top candidate</a></li>
-														<li><a href="candidate-profile.html">Candidate Detail</a></li>
-														<li><a href="candidate-detail.html">New Candidate Detail</a></li>
-														<li><a href="browse-resume-grid.html">Browse Candidate Grid</a></li>
-														<li><a href="browse-candidate-map.html">Browse Candidate With Map</a></li>
-														<li><a href="browse-resume.html">Browse Resume</a></li>
-																												
-													</ul>
-												</div>
-											</div><!-- end col-3 -->
-											<div class="col-menu col-md-3">
-												<h6 class="title">For Employer</h6>
-												<div class="content">
-													<ul class="menu-col">
-														<li><a href="browse-employer-list.html">Employer With Sidebar</a></li>
-														<li><a href="browse-company.html">Browse Companies</a></li>
-														<li><a href="company-detail.html">Company Detail</a></li>
-														<li><a href="create-job.html">Create Job</a></li>
-														<li><a href="create-company.html">Create Company</a></li>
-														<li><a href="manage-company.html">Manage Company</a></li>
-														<li><a href="manage-employee.html">Manage Employee</a></li>
-														<li><a href="employer-profile.html">Employer Profile</a></li>
-													</ul>
-												</div>
-											</div>    
-											<div class="col-menu col-md-3">
-												<h6 class="title">Extra Pages <span class="new-offer">New</span></h6>
-												<div class="content">
-													<ul class="menu-col">
-														<li><a href="top-candidate-detail.html">Top Candidate detail</a></li>
-														<li><a href="payment-methode.html">Payment Methode</a></li>
-														<li><a href="new-login-signup.html">New LogIn / SignUp</a></li>
-														<li><a href="top-candidate-2.html">Top candidate 2</a></li>
-														<li><a href="premium-candidate.html">Premium Candidate</a></li>
-														<li><a href="premium-candidate-detail.html">Premium Candidate Detail</a></li>
-														<li><a href="contact.html">Get in Touch</a></li>
-													</ul>
-												</div>
-											</div><!-- end col-3 -->
-										</div><!-- end row -->
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li><a href="register.html"><i class="fa fa-sign-in"></i>Sign Out</a></li>
-							<li class="left-br"><a href="javascript:void(0)"  data-toggle="modal" data-target="#signup" class="signin">Post Job</a></li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div>   
-			</nav>
+			<?php include_once "navbar2.php" ?>
 			<!-- End Navigation -->
 			<div class="clearfix"></div>
 			
@@ -165,41 +33,41 @@
 					
 						<!-- Sidebar Wrap -->
 						<div class="col-lg-3 col-md-4">
-							<div class="side-dashboard">
+						<div class="side-dashboard">
 								
 								<div class="dashboard-avatar">
 								
-									<div class="dashboard-avatar-thumb">
+									<!-- <div class="dashboard-avatar-thumb">
 										<img src="assets/img/can-2.png" class="img-avater" alt="" />
-									</div>
+									</div> -->
 									
 									<div class="dashboard-avatar-text">
-										<h4>Shaurya Preet</h4>
-										<span>Zivara Technoloty</span>
+										<h4><?php echo $_SESSION['full_name'] ?></h4>
+										<span><?php echo $_SESSION["username"]; ?></span>
 									</div>
 									
 								</div>
 								
 								<div class="dashboard-menu">
 									<ul>
-										<li><a href="dashboard.html"><i class="ti-dashboard"></i>Dashboard</a></li>
-										<li class="active"><a href="post-new-job.html"><i class="ti-ruler-pencil"></i>Post New Page</a></li>
-										<li><a href="all-jobs.html"><i class="ti-briefcase"></i>All Jobs</a></li>
+										<li><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
+										<li class="active"><a href="post-job.php"><i class="ti-ruler-pencil"></i>Post Job</a></li>
+										<!-- <li><a href="all-jobs.html"><i class="ti-briefcase"></i>All Jobs</a></li>
 										<li><a href="applications.html"><i class="ti-user"></i>Applications</a></li>
 										<li><a href="packages.html"><i class="ti-wallet"></i>Packages</a></li>
 										<li><a href="choose-package.html"><i class="ti-cup"></i>Choose Packages</a></li>
 										<li><a href="viewed-resume.html"><i class="ti-flag-alt-2"></i>Viewed Resume</a></li>
 										<li><a href="myprofile.html"><i class="ti-id-badge"></i>Edit Profile</a></li>
-										<li><a href="login.html"><i class="ti-power-off"></i>Logout</a></li>
+										<li><a href="login.html"><i class="ti-power-off"></i>Logout</a></li> -->
 									</ul>
-									<h4>For Candidate</h4>
+									<!-- <h4>For Candidate</h4>
 									<ul>
 										<li><a href="candidate-dashboard.html"><i class="ti-dashboard"></i>Candidate Dashboard</a></li>
 										<li><a href="candidate-resume.html"><i class="ti-wallet"></i>My Resume</a></li>
 										<li><a href="applied-jobs.html"><i class="ti-hand-point-right"></i>Applied Jobs</a></li>
 										<li><a href="saved-jobs.html"><i class="ti-heart"></i>Saved Jobs</a></li>
 										<li><a href="alert-jobs.html"><i class="ti-bell"></i>Alert Jobs</a></li>
-									</ul>
+									</ul> -->
 								</div>
 							</div>
 						</div>
@@ -210,205 +78,122 @@
 								<div class="dashboard-caption">
 									
 									<div class="dashboard-caption-header">
-										<h4><i class="ti-ruler-pencil"></i>Post New Page</h4>
+										<h4><i class="ti-ruler-pencil"></i>Post Job</h4>
 									</div>
 									
 									<div class="dashboard-caption-wrap">
-										<form class="post-form">
+										<form action="backend/post-job-backend.php" class="post-form" method="POST">
 											
 											<!-- row -->
 											<div class="row">
 												<div class="col-md-12 col-sm-12">
 													<div class="form-group">
 														<label>Job Title*</label>
-														<input type="text" class="form-control" placeholder="Enter Title">
+														<input name="job_title" type="text" class="form-control" placeholder="Enter Title">
 													</div>	
 												</div>
 											</div>
-											
-											<!-- row -->
+											<!-- <div class="row"> -->
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>Salary*</label>
+													<input name="salary" type="number" class="form-control" placeholder="Enter Salary">
+												<!-- </div>	 -->
+												</div>
+											</div>
+											<!-- <div class="row"> -->
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>Industry*</label>
+													<input name="industry" type="text" class="form-control" placeholder="Enter Industry">
+												<!-- </div>	 -->
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>Category*</label>
+													<input name="category" type="text" class="form-control" placeholder="Enter Category">
+												</div>	
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>Job Type*</label>
+													<select name="job_type" id="jb-type" class="form-control">
+														<option>Job Type</option>
+														<!-- <option>Contract</option> -->
+														<option>Full-Time</option>
+														<option>Part-time</option>
+														<!-- <option>Temporary</option> -->
+														<option>Freelancer</option>
+													</select>
+												</div>	
+											</div>
 											<div class="row">
 												<div class="col-md-12 col-sm-12">
-													<div class="form-group">
-														<label>Job Description</label>
-														<textarea class="form-control about height-120" placeholder="About Company"></textarea>
-													</div>	
-												</div>
-											</div>
-											
-											<!-- row -->
-											<div class="row">
-											
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Job Category*</label>
-														<select id="jb-category" class="form-control">
-															<option>Choose Category</option>
-															<option>Accounting Assistant</option>
-															<option>Arts, Design, Media</option>
-															<option>Charity & Voluntary</option>
-															<option>Education & Coachs</option>
-															<option>Finance And Business</option>
-															<option>IT & Computer</option>
-															<option>Banking</option>
-														</select>
-													</div>	
-												</div>
-												
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Job Type*</label>
-														<select id="jb-type" class="form-control">
-															<option>Job Type</option>
-															<option>Contract</option>
-															<option>Full-Time</option>
-															<option>Part-time</option>
-															<option>Temporary</option>
-															<option>Freelancer</option>
-														</select>
-													</div>	
-												</div>
-												
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Job Level*</label>
-														<select id="jb-level" class="form-control">
-															<option>Job Level</option>
-															<option>Junior</option>
-															<option>Manager</option>
-															<option>Senior</option>
-														</select>
-													</div>	
-												</div>
-												
-											</div>
-											
-											<!-- row -->
-											<div class="row">
-											
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Salary From</label>
-														<input type="text" class="form-control" placeholder="Enter Salary From">
-													</div>	
-												</div>
-												
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Salary To</label>
-														<input type="text" class="form-control" placeholder="Enter Salary To">
-													</div>	
-												</div>
-												
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Salary Postfix</label>
-														<input type="text" class="form-control" placeholder="EX. Month">
-													</div>	
-												</div>
-												
-											</div>
-											
-											<!-- row -->
-											<div class="row">
-												<div class="col-md-12 col-sm-12">
-													<div class="form-group">
-														<label>Language</label>
-														<select class="language form-control" name="skills[]" multiple="multiple">
-															<option>Afrikanns</option>
-															<option>Albanian</option>
-															<option>English</option>
-															<option>Estonian</option>
-															<option>Georgian</option>
-															<option>French</option>
-															<option>German</option>
-														</select>
-													</div>	
-												</div>
-											</div>
-											
-											<!-- row -->
-											<div class="row mrg-top-30">
-												<div class="col-md-12 col-sm-12">
-													<div class="form-group">
-														<h4>Application Settings</h4>
-													</div>	
-												</div>
-											</div>
-											
-											<!-- row -->
-											<div class="row">
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Custom Job URL</label>
-														<input type="text" class="form-control" placeholder="https://site.com/custom-url/">
-													</div>	
-												</div>
-												
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Email For Applications</label>
-														<input type="text" class="form-control" placeholder="Ex.myapplicat@gmail.com">
-													</div>	
-												</div>
-												
-												<div class="col-lg-4 col-md-6 col-sm-12">
-													<div class="form-group">
-														<label>Deadline Submission</label>
-														<input type="text" id="expirejob" data-lang="en" data-large-mode="true" data-min-year="2017" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control" readonly="">
-													</div>	
-												</div>
-											</div>
-											
-											
-											
-											<!-- row -->
-											<div class="row mrg-top-30">
-												<div class="col-md-12 col-sm-12">
-													<div class="form-group">
-														<h4>Required Skills</h4>
-													</div>	
-												</div>
-												<div class="col-md-12 col-sm-12">
-													<div class="form-group">
-														<select class="multiple-skill form-control" name="skills[]" multiple="multiple">
-															<option>HTML5</option>
-															<option>Css3</option>
-															<option>Photoshop</option>
-															<option>Php</option>
-															<option>Wordpress</option>
-															<option>Bootstrap</option>
-															<option>Magento</option>
-														</select>
-													</div>	
-												</div>
-											</div>
-											
-											<!-- row -->
-											<div class="row mrg-top-30">
-												<div class="col-md-12 col-sm-12">
-													<div class="form-group">
-														<h4>Job Loation & Map</h4>
-													</div>	
-												</div>
-											</div>
-											
-											<!-- row -->
-											<div class="row">
-												<div class="col-lg-12 col-md-12 col-sm-12">
 													<div class="form-group">
 														<label>Address*</label>
-														<input type="text" class="form-control" placeholder="Ex. 502, Sector 20 C, Mohali">
+														<input name="address" type="text" class="form-control" placeholder="Enter Address">
 													</div>	
 												</div>
-												
-												<div class="col-lg-12 col-md-12 col-sm-12">
-													<div class="form-group">
-														<div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781" data-mapTitle="Our Location"></div>
-													</div>	
-												</div>
-												
 											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>City*</label>
+													<input name="city" type="text" class="form-control" placeholder="Enter City">
+												<!-- </div>	 -->
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>State*</label>
+													<input name="state" type="text" class="form-control" placeholder="Enter State">
+												</div>	
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>Country*</label>
+													<input name="country" type="text" class="form-control" placeholder="Enter Country">
+												<!-- </div>	 -->
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>Zip Code*</label>
+													<input name="zip_code" type="number" class="form-control" placeholder="Enter Zip Code">
+												</div>	
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>Telephone*</label>
+													<input name="telephone" type="text" class="form-control" placeholder="Enter Telephone">
+												<!-- </div>	 -->
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12">
+												<div class="form-group">
+													<label>Email*</label>
+													<input name="email" type="email" class="form-control" placeholder="Enter Email">
+												</div>	
+											</div>
+											<!-- row -->
+											<div class="row">
+												<div class="col-md-12 col-sm-12">
+													<div class="form-group">
+														<label>Job Responsibilities*</label>
+														<textarea name="job_respon" class="form-control height-120" placeholder="About Company"></textarea>
+													</div>	
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12">
+													<div class="form-group">
+														<label>Skill Requirements*</label>
+														<textarea name="skills" class="form-control height-120" placeholder="Job Responsibilities"></textarea>
+													</div>	
+												</div>
+											</div>
+											
+											<!-- row -->
 											
 											<!-- row -->
 											<div class="row mrg-top-30">
@@ -433,7 +218,7 @@
 			<!-- General Detail End -->
 			
 			<!-- ============================ Call To Action ================================== -->
-			<section class="theme-bg call-to-act-wrap">
+			<!-- <section class="theme-bg call-to-act-wrap">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -449,7 +234,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- ============================ Call To Action End ================================== -->
 			
 			<!-- ============================ Before Footer ================================== -->
