@@ -1,4 +1,12 @@
-<? session_start(); ?>
+<?php
+session_start(); 
+include_once "config.php";
+error_reporting(0);
+$sql = "SELECT COUNT(*) FROM jobs";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+$job_posted = $row['COUNT(*)'];
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,7 +38,7 @@
 			<section class="inner-header-page">
 				<div class="container">
 					
-					<h2>0 Jobs Found</h2>
+					<h2><?php echo $job_posted ?> Jobs Found</h2>
 					<p>Best freelancing website trusted by many businesses!</p>
 					
 				</div>
@@ -78,8 +86,7 @@
 					<br>
 					<!-- Freelancers Start -->
 					<?php
-					include_once("config.php");
-					$query="SELECT * FROM jobs  WHERE 1";
+					$query="SELECT * FROM jobs ";
 					$result=mysqli_query($conn,$query);
 					while($row=mysqli_fetch_assoc($result))
 					{
@@ -90,11 +97,11 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="popular-jobs-container">
 								<div class="popular-jobs-box">
-									<span class="popular-jobs-status bg-success"><?php echo $row["salary_postfix"]?></span>
-									<h4 class="flc-rate"><?php echo $row["salary_to"]?></h4>
+									<span class="popular-jobs-status bg-success"><?php echo $row["job_type"] ?></span>
+									<h4 class="flc-rate">$<?php echo $row["salary"]?></h4>
 									<div class="popular-jobs-box">
 										<div class="popular-jobs-box-detail">
-											<h4><?php echo $row["jon_title"]?></h4>
+											<h4><?php echo $row["job_title"]?></h4>
 											<span class="desination"><?php echo $_SESSION["full_name"] ?> </span>
 										</div>
 									</div>
@@ -107,7 +114,7 @@
 										</ul> -->
 										<!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui.</p> -->
 									</div>
-									<a href="job-detail.php" class="btn btn-popular-jobs bt-1">View Detail</a>
+									<a href="job-detail.php?id=<?php echo $row["id"] ?>" class="btn btn-popular-jobs bt-1">View Detail</a>
 								</div>
 							</div>
 						</div>

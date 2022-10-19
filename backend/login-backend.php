@@ -19,13 +19,14 @@ if(isset($_POST["login"]))
                 $sql="SELECT * FROM `users` WHERE email='$email'";
                 $result = mysqli_query($conn, $sql);
                 $row=mysqli_fetch_assoc($result);
-                $_SESSION["id"]=$row["id"];
-                $_SESSION["full_name"]=$roe["full_name"];
+                
                 if($email==$row['email'])
                 {
                     if(!strcmp($password,$row['password']))
                     {
                         $_SESSION['username']=$row['email'];
+                        $_SESSION["id"]=$row["id"];
+                        $_SESSION["full_name"]=$row["full_name"];
                         header("Location:../index.php");
                     }
                     else
