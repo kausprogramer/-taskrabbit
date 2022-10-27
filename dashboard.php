@@ -7,7 +7,6 @@ if(!isset($_SESSION['username']))
 error_reporting(0);
 include_once "config.php";
 $sql = "SELECT COUNT(*) FROM jobs WHERE by_user = '".$_SESSION['id']."'";
-echo $sql;
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 $job_posted = $row['COUNT(*)'];
@@ -46,30 +45,26 @@ $job_posted = $row['COUNT(*)'];
 						<div class="col-lg-3 col-md-4">
 							<div class="side-dashboard">
 								
-								<div class="dashboard-avatar">
-								
-									<!-- <div class="dashboard-avatar-thumb">
-										<img src="assets/img/can-2.png" class="img-avater" alt="" />
+									<!-- <div class="dashboard-avatar">
+										
+										<div class="dashboard-avatar-text">
+											<h4><?php echo $_SESSION["full_name"] ?></h4>
+											<span><?php echo $_SESSION["username"] ?></span>
+										</div>
+										
 									</div> -->
-									
-									<div class="dashboard-avatar-text">
-										<h4><?php echo $_SESSION["full_name"] ?></h4>
-										<span><?php echo $_SESSION["username"] ?></span>
-									</div>
-									
-								</div>
 								
 								<div class="dashboard-menu">
 									<ul>
-										<li class="active"><a href="dashboard.php"><i class="ti-dashboard"></i>Dashboard</a></li>
-										<li><a href="post-job.php"><i class="ti-ruler-pencil"></i>Post Job</a></li>
-										<!-- <li><a href="all-jobs.html"><i class="ti-briefcase"></i>All Jobs</a></li>
-										<li><a href="applications.html"><i class="ti-user"></i>Applications</a></li>
-										<li><a href="packages.html"><i class="ti-wallet"></i>Packages</a></li>
-										<li><a href="choose-package.html"><i class="ti-cup"></i>Choose Packages</a></li>
-										<li><a href="viewed-resume.html"><i class="ti-flag-alt-2"></i>Viewed Resume</a></li>
-										<li><a href="myprofile.html"><i class="ti-id-badge"></i>Edit Profile</a></li>
-										<li><a href="login.html"><i class="ti-power-off"></i>Logout</a></li> -->
+										<li class="active"><a href="dashboard.php"><i class="ti-dashboard"></i>Profile</a></li>
+										<li><a href="#"><i class="ti-ruler-pencil"></i>Password</a></li>
+										<li><a href="#"><i class="ti-briefcase"></i>Notifications</a></li>
+										<li><a href="#"><i class="ti-user"></i>Address</a></li>
+										<li><a href="#"><i class="ti-wallet"></i>Billing Info</a></li>
+										<li><a href="#"><i class="ti-cup"></i>Cancel a Task</a></li>
+										<li><a href="#"><i class="ti-flag-alt-2"></i>Account Balance</a></li>
+										<li><a href="#"><i class="ti-id-badge"></i>Transaction</a></li>
+										<li><a href="#"><i class="ti-power-off"></i>Delete Account</a></li>
 									</ul>
 									<!-- <h4>For Candidate</h4>
 									<ul>
@@ -89,19 +84,25 @@ $job_posted = $row['COUNT(*)'];
 								<div class="dashboard-caption">
 									
 									<div class="dashboard-caption-header">
-										<h4><i class="ti-settings"></i>Dashboard</h4>
+										<h4><i class="ti-settings"></i>Profile</h4>
 									</div>
 									
 									<div class="dashboard-caption-wrap">
+									<div class="row">
+											<div class="col-lg-3 col-md-6 col-sm-12">
+									<div class="dashboard-avatar-thumb">
+										<img src="assets/img/can-2.png" class="img-avater" alt="" />
+									</div>
+										</div>
+										<div class="dashboard-avatar-text">
+										<h4><?php echo $_SESSION["full_name"] ?></h4>
+										<span><?php echo $_SESSION["username"] ?></span><br>
+										<span><?php echo $_SESSION["number"] ?></span><br>
+                    					<a href='backend/logout.php'><i class='fa fa-sign-out'></i>Logout</a>
+									</div>
+									</div>
 									
 										<!-- Overview -->
-										<div class="row">
-											<div class="col-lg-3 col-md-6 col-sm-12">
-												<div class="dashboard-stat widget-1">
-													<div class="dashboard-stat-content"><h4><?php echo $job_posted ?></h4> <span>Job Posted</span></div>
-													<div class="dashboard-stat-icon"><i class="ti-location-pin"></i></div>
-												</div>	
-											</div>
 											
 											<!-- <div class="col-lg-3 col-md-6 col-sm-12">
 												<div class="dashboard-stat widget-2">
@@ -110,20 +111,20 @@ $job_posted = $row['COUNT(*)'];
 												</div>	
 											</div> -->
 											
-											<div class="col-lg-3 col-md-6 col-sm-12">
+											<!-- <div class="col-lg-3 col-md-6 col-sm-12">
 												<div class="dashboard-stat widget-3">
 													<div class="dashboard-stat-content"><h4>0</h4> <span>Total Views</span></div>
 													<div class="dashboard-stat-icon"><i class="ti-pie-chart"></i></div>
 												</div>	
 											</div>
-											
+											 -->
 											<!-- <div class="col-lg-3 col-md-6 col-sm-12">
 												<div class="dashboard-stat widget-4">
 													<div class="dashboard-stat-content"><h4>107</h4> <span>Expire Jobs</span></div>
 													<div class="dashboard-stat-icon"><i class="ti-bookmark"></i></div>
 												</div>	
 											</div> -->
-										</div>
+										<!-- </div> -->
 										
 										<!-- Notifications -->
 										<!-- <div class="row">

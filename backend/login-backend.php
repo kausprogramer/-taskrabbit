@@ -27,6 +27,7 @@ if(isset($_POST["login"]))
                         $_SESSION['username']=$row['email'];
                         $_SESSION["id"]=$row["id"];
                         $_SESSION["full_name"]=$row["full_name"];
+                        $_SESSION["number"]=$row["number"];
                         header("Location:../index.php");
                     }
                     else

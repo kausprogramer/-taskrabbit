@@ -82,6 +82,13 @@
 										<i class="theme-cl ti-lock"></i>
 									</div>
 								</div>
+								<div class="form-group">
+									<label>Number</label>
+									<div class="input-with-icon">
+										<input type="text" class="form-control" placeholder="Enter Your Number" name="number" required>
+										<i class="theme-cl ti-user"></i>
+									</div>
+								</div>
 								
 								<div class="register-account text-center">
 									By hitting the <span class="theme-cl">Register</span> button, you agree to the <a class="theme-cl" href="#">Terms conditions</a> and <a class="theme-cl" href="#">Privacy Policy</a>
