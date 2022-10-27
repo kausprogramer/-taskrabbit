@@ -21,7 +21,7 @@
 
                 if(isset($_SESSION['username']))
                 {
-                    echo "<li><a href='dashboard.php'><i class='fa fa-dashboard'></i>Dashboard</a></li>";
+                    echo "<li><a href='dashboard.php'><i class='fa fa-dashboard'></i>Your Account</a></li>";
                     echo "<li><a href='backend/logout.php'><i class='fa fa-sign-out'></i>Logout</a></li>";
                 }
                 else
