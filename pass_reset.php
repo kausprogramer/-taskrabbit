@@ -84,22 +84,31 @@ $job_posted = $row['COUNT(*)'];
 								<div class="dashboard-caption">
 									
 									<div class="dashboard-caption-header">
-										<h4><i class="ti-settings"></i>Profile</h4>
+										<h4><i class="ti-settings"></i>Password Reset</h4>
 									</div>
 									
 									<div class="dashboard-caption-wrap">
 									<div class="row">
-											<div class="col-lg-3 col-md-6 col-sm-12">
-									<div class="dashboard-avatar-thumb">
-										<img src="assets/img/can-2.png" class="img-avater" alt="" />
-									</div>
-										</div>
-										<div class="dashboard-avatar-text">
-										<h4><?php echo $_SESSION["full_name"] ?></h4>
-										<span><?php echo $_SESSION["username"] ?></span><br>
-										<span><?php echo $_SESSION["number"] ?></span><br>
-                    					<a href='backend/logout.php'><i class='fa fa-sign-out'></i>Logout</a>
-									</div>
+									<div class="col-md-6 col-sm-6">
+						<div class="jb4-form-fields">
+						<form method="POST" action="backend/pass_reset_backend.php">
+						<label>Old Password</label>
+								<div class="input-with-icon">
+									<input type="password" class="form-control" placeholder="Enter Old Password" name="old_pass" required>
+									
+								</div>
+								<label>New Password</label>
+								<div class="input-with-icon">
+									<input type="password" class="form-control" placeholder="Enter New Password" name="new_pass" required>
+								</div>
+								<label>Confirm</label>
+								<div class="input-with-icon">
+									<input type="password" class="form-control" placeholder="Conifrm New Password" name="conf_new_pass" required>
+								</div>
+								<button type="submit" class="btn btn-primary theme-bg full-width" name="submit">Submit</button>
+								</form>
+						</div>
+					</div>
 									</div>
 									
 										<!-- Overview -->
